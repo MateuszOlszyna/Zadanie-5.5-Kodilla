@@ -1,0 +1,24 @@
+{
+  "name": "kodilla-bootstrap",
+  "version": "1.0.0",
+  "description": "components JS for Bootstrap",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "kodilla-tet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "yes"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Mateusz Olszyna",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
