@@ -13,6 +13,16 @@ module.exports = function(grunt) {
       }
     },
 
+    watch: {
+    scripts: {
+        files: ['sass/*.sass'],
+        tasks: ['sass'],
+        options: {
+            spawn: false,
+        }
+    }
+  }, 
+
     imagemin: {
       dynamic: {
         files: [{
@@ -23,18 +33,9 @@ module.exports = function(grunt) {
         }]
       }
     }
-
-watch: {
-    scripts: {
-        files: ['sass/*.sass'],
-        tasks: ['sass'],
-        options: {
-            spawn: false,
-        },
-    } 
-}
-
   });
+
+  
   // Load the plugins tasks 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
